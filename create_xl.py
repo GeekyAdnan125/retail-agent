@@ -40,6 +40,7 @@ for _ in range(250):
         "category": category,
         "brand": brand,
         "size": size,
+        "color" : color,
         "gender": gender,
         "price": price,
         "rating": rating,
