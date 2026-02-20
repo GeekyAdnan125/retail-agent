@@ -19,7 +19,7 @@ llm = ChatGroq(
 )
 
 
-def recoment_product(user_input: str, user_name: str | None = None):
+def recomend_product(user_input: str, user_name: str | None = None):
 
     query = user_input.lower().strip()
 
@@ -93,6 +93,3 @@ Respond in a friendly and helpful way.
     response = llm.invoke(prompt)
 
     return response.content
-
-q = input("Enter you q")
-print(recoment_product(q))
