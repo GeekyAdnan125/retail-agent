@@ -1,9 +1,3 @@
-Perfect Adnan 👌
-I’ll now rewrite your content into a **clean, professional, GitHub-ready README format** with proper structure, formatting, and clarity.
-
-You can directly copy-paste this into `README.md`.
-
----
 
 # 🛍️ AI-Powered Retail Product Recommendation Agent
 
@@ -72,14 +66,12 @@ It simulates a real-world AI feature commonly integrated into modern e-commerce 
 ---
 ## 📂 Project Architecture
 ```mermaid
-flowchart TD
-    User --> UI[Streamlit Frontend]
-    UI --> Agent[Agent Orchestrator]
-    Agent --> Filter[Pandas Filtering Service]
-    Agent --> LLM[Groq LLM Service]
-    Filter --> Data[Excel Product Data]
-    LLM --> Response[Generated AI Response]
-    Response --> UI
+flowchart LR
+    A[User] --> B[Streamlit UI]
+    B --> C[Pandas Filtering]
+    C --> D[Groq LLM]
+    D --> E[Response]
+    E --> B
 ```
 
 ## 📂 Project Structure
