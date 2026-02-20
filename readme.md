@@ -95,7 +95,7 @@ Retail-Product-Chatbot/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/retail-ai-agent.git
+git clone https://github.com/ GeekyAdnan125/retail-agent.git
 cd retail-ai-agent
 ```
 
