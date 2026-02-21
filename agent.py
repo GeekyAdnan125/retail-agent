@@ -8,10 +8,13 @@ load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-## load the product data
-df = pd.read_excel("data\product.xlsx")
-df = df.fillna(" ")
+import os
+import pandas as pd
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "data", "product.xlsx")
+
+df = pd.read_excel(file_path)
 ## llm setup
 llm = ChatGroq(
     api_key=GROQ_API_KEY,
